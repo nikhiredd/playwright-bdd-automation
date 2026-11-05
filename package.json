@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
   "test": "bddgen && playwright test"
+}
   "test:headed": "bddgen test && playwright test --headed"
   },
   "keywords": [],
