@@ -7,5 +7,3 @@ When user enters username and password
 When user click login button 
 Then user should be able to view the dashboard 
 
-|username|    |password|
-|Admin|       |admin123|
