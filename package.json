@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "bddgen && playwright test"
+  "test": "bddgen test && playwright test",
+  "test:headed": "bddgen test && playwright test --headed"
+},
 }
   "test:headed": "bddgen test && playwright test --headed"
   },
