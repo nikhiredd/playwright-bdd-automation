@@ -1,14 +1,12 @@
+
 {
   "name": "playwright-learning",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "bddgen test && playwright test",
-  "test:headed": "bddgen test && playwright test --headed"
-},
-
-  "test:headed": "bddgen test && playwright test --headed"
+    "test": "bddgen test && playwright test",
+    "test:headed": "bddgen test && playwright test --headed"
   },
   "keywords": [],
   "author": "",
