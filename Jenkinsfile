@@ -27,10 +27,17 @@ pipeline {
             }
         }
 
-        stage('Run BDD Tests') {
-            steps {
-                sh 'npx bddgen'
-                sh 'npx playwright test'
+        stage('Generate BDD Tests') {
+    steps {
+        sh 'npx bddgen'
+    }
+}
+
+stage('Run Playwright Tests') {
+    steps {
+        sh 'npx playwright test'
+    }
+
             }
         }
     }
