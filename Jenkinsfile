@@ -1,6 +1,10 @@
 
 pipeline {
     agent any
+    
+    environment {
+    PATH = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:${env.PATH}"
+}
 
     stages {
         stage('Checkout') {
@@ -11,6 +15,8 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
+                sh 'node -v'
+                sh 'npm -v'
                 sh 'npm ci'
             }
         }
